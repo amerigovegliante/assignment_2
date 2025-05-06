@@ -17,7 +17,7 @@ jobs:
         java-version: 8.0.332+9
         cache: 'maven'
     - name: Build and test with JaCoCo
-      run: mvn -B clean package --file roman-number/pom.xml
+      run: mvn -B clean package --file ./**/pom.xml
     coverage:
       needs: build
       runs-on: ubuntu-latest
