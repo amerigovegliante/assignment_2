@@ -14,6 +14,7 @@ public class RomanPrinter {
       char [] Roman= romanNumber.toCharArray();
       String[] AsciiArt_I = {" _____ ","|_   _|","  | |  ","  | |  "," _| |_ ","|_____|"};
       String[] AsciiArt_V = {"__      __", "\\ \\    / /", " \\ \\  / / ","  \\ \\/ /  ","   \\  /   ","    \\/    "};
+      String[] AsciiArt_X={"__    __","\\ \\  / /"," \\ \\/ / ","  >  <  "," / /\\ \\ ","/_/  \\_\\"};
       for (int j=0;j<6;j++){
           for (int i=0;i<Roman.length;i++){
               if(Roman[i]=='I'){
@@ -22,10 +23,12 @@ public class RomanPrinter {
               else if(Roman[i]=='V')
               {
                 AsciiArt+=AsciiArt_V[j];
-              }
-              if(i!=Roman.length-1){
-                  AsciiArt=AsciiArt+" ";
-              }
+              }else if(Roman[i]=='X'){
+                AsciiArt=AsciiArt+AsciiArt_X[j];
+            }
+            if(i!=Roman.length-1){
+                AsciiArt=AsciiArt+" ";
+            }
           }
           AsciiArt=AsciiArt+"\n";
       }

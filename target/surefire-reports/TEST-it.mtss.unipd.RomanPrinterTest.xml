@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="it.mtss.unipd.RomanPrinterTest" time="0.005" tests="2" errors="0" skipped="0" failures="2">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="it.mtss.unipd.RomanPrinterTest" time="0.008" tests="2" errors="0" skipped="0" failures="2">
   <properties>
     <property name="java.specification.version" value="24"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -10,13 +10,13 @@
     <property name="user.variant" value=""/>
     <property name="java.vendor.url" value="https://java.oracle.com/"/>
     <property name="user.timezone" value="Europe/Rome"/>
-    <property name="mvnd.terminalWidth" value="237"/>
+    <property name="mvnd.terminalWidth" value="120"/>
     <property name="os.name" value="Windows 10"/>
     <property name="java.vm.specification.version" value="24"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IT"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-24\bin"/>
-    <property name="sun.java.command" value="C:\Users\Giulia\AppData\Local\Temp\surefire7631093529334868766\surefirebooter4504130296736559219.jar C:\Users\Giulia\AppData\Local\Temp\surefire7631093529334868766 2025-05-09T17-48-29_896-jvmRun1 surefire611387300204340630tmp surefire_38592096134707678962tmp"/>
+    <property name="sun.java.command" value="C:\Users\Giulia\AppData\Local\Temp\surefire2833463501780525323\surefirebooter18235651347100331301.jar C:\Users\Giulia\AppData\Local\Temp\surefire2833463501780525323 2025-05-09T17-48-29_896-jvmRun1 surefire8434206608491565451tmp surefire_55860721095449768414tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\Giulia\Desktop\università\MTSS\Prova 2\assignment_2\target\test-classes;C:\Users\Giulia\Desktop\università\MTSS\Prova 2\assignment_2\target\classes;C:\Users\Giulia\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\Giulia\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -32,7 +32,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Giulia\AppData\Local\Temp\surefire7631093529334868766\surefirebooter4504130296736559219.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Giulia\AppData\Local\Temp\surefire2833463501780525323\surefirebooter18235651347100331301.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="24.0.1+9-30"/>
@@ -61,32 +61,14 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="68.0"/>
   </properties>
-  <testcase name="testComplexCombinations" classname="it.mtss.unipd.RomanPrinterTest" time="0.001">
-    <failure message="expected:&lt; _____  [__      __&#10;|_   _| \ \    / /&#10;  | |    \ \  / / &#10;  | |     \ \/ /  &#10; _| |_     \  /   &#10;|_____|     \/   ] &#10;&gt; but was:&lt; _____  [&#10;|_   _| &#10;  | |   &#10;  | |   &#10; _| |_  &#10;|_____|] &#10;&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: 
-expected:< _____  [__      __
-|_   _| \ \    / /
-  | |    \ \  / / 
-  | |     \ \/ /  
- _| |_     \  /   
-|_____|     \/   ] 
-> but was:< _____  [
-|_   _| 
-  | |   
-  | |   
- _| |_  
-|_____|] 
->
-	at it.mtss.unipd.RomanPrinterTest.testComplexCombinations(RomanPrinterTest.java:39)
-]]></failure>
-  </testcase>
-  <testcase name="testSingleCharacters" classname="it.mtss.unipd.RomanPrinterTest" time="0.004">
-    <failure message="expected:&lt;[__      __&#10;\ \    / /&#10; \ \  / / &#10;  \ \/ /  &#10;   \  /   &#10;    \/    ]&#10;&gt; but was:&lt;[&#10;&#10;&#10;&#10;&#10;]&#10;&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: 
-expected:<[__      __
-\ \    / /
- \ \  / / 
-  \ \/ /  
-   \  /   
-    \/    ]
+  <testcase name="testComplexCombinations" classname="it.mtss.unipd.RomanPrinterTest" time="0.002">
+    <failure message="expected:&lt;[__    __  _____  __      __&#10;\ \  / / |_   _| \ \    / /&#10; \ \/ /    | |    \ \  / / &#10;  &gt;  &lt;     | |     \ \/ /  &#10; / /\ \   _| |_     \  /   &#10;/_/  \_\ |_____|     \/    ]&#10;&gt; but was:&lt;[&#10;&#10;&#10;&#10;&#10;]&#10;&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: 
+expected:<[__    __  _____  __      __
+\ \  / / |_   _| \ \    / /
+ \ \/ /    | |    \ \  / / 
+  >  <     | |     \ \/ /  
+ / /\ \   _| |_     \  /   
+/_/  \_\ |_____|     \/    ]
 > but was:<[
 
 
@@ -94,7 +76,25 @@ expected:<[__      __
 
 ]
 >
-	at it.mtss.unipd.RomanPrinterTest.testSingleCharacters(RomanPrinterTest.java:15)
+	at it.mtss.unipd.RomanPrinterTest.testComplexCombinations(RomanPrinterTest.java:45)
+]]></failure>
+  </testcase>
+  <testcase name="testSingleCharacters" classname="it.mtss.unipd.RomanPrinterTest" time="0">
+    <failure message="expected:&lt;[ _      &#10;| |     &#10;| |     &#10;| |     &#10;| |____ &#10;|______|]&#10;&gt; but was:&lt;[&#10;&#10;&#10;&#10;&#10;]&#10;&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: 
+expected:<[ _      
+| |     
+| |     
+| |     
+| |____ 
+|______|]
+> but was:<[
+
+
+
+
+]
+>
+	at it.mtss.unipd.RomanPrinterTest.testSingleCharacters(RomanPrinterTest.java:21)
 ]]></failure>
   </testcase>
 </testsuite>
