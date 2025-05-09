@@ -17,15 +17,16 @@ public class RomanPrinter {
       String[] AsciiArt_X={"__    __","\\ \\  / /"," \\ \\/ / ","  >  <  "," / /\\ \\ ","/_/  \\_\\"};
       for (int j=0;j<6;j++){
           for (int i=0;i<Roman.length;i++){
-              if(Roman[i]=='I'){
-                  AsciiArt=AsciiArt+AsciiArt_I[j];
-              }
-              else if(Roman[i]=='V')
-              {
-                AsciiArt+=AsciiArt_V[j];
-              }else if(Roman[i]=='X'){
-                AsciiArt=AsciiArt+AsciiArt_X[j];
+            if(Roman[i]=='I'){
+                AsciiArt=AsciiArt+AsciiArt_I[j];
             }
+            else if(Roman[i]=='V')
+            {
+              AsciiArt+=AsciiArt_V[j];
+            }else if(Roman[i]=='X'){
+              AsciiArt=AsciiArt+AsciiArt_X[j];
+            }
+
             if(i!=Roman.length-1){
                 AsciiArt=AsciiArt+" ";
             }
