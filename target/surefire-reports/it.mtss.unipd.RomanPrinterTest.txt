@@ -2,24 +2,24 @@
 Test set: it.mtss.unipd.RomanPrinterTest
 -------------------------------------------------------------------------------
 Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.008 s <<< FAILURE! - in it.mtss.unipd.RomanPrinterTest
-testComplexCombinations(it.mtss.unipd.RomanPrinterTest)  Time elapsed: 0.002 s  <<< FAILURE!
+testComplexCombinations(it.mtss.unipd.RomanPrinterTest)  Time elapsed: 0 s  <<< FAILURE!
 org.junit.ComparisonFailure: 
-expected:<[__    __  _____  __      __
-\ \  / / |_   _| \ \    / /
- \ \/ /    | |    \ \  / / 
-  >  <     | |     \ \/ /  
- / /\ \   _| |_     \  /   
-/_/  \_\ |_____|     \/    ]
-> but was:<[
-
-
-
-
-]
+expected:<__    __ [ _      
+\ \  / / | |     
+ \ \/ /  | |     
+  >  <   | |     
+ / /\ \  | |____ 
+/_/  \_\ |______|]
+> but was:<__    __ [
+\ \  / / 
+ \ \/ /  
+  >  <   
+ / /\ \  
+/_/  \_\ ]
 >
-	at it.mtss.unipd.RomanPrinterTest.testComplexCombinations(RomanPrinterTest.java:45)
+	at it.mtss.unipd.RomanPrinterTest.testComplexCombinations(RomanPrinterTest.java:57)
 
-testSingleCharacters(it.mtss.unipd.RomanPrinterTest)  Time elapsed: 0 s  <<< FAILURE!
+testSingleCharacters(it.mtss.unipd.RomanPrinterTest)  Time elapsed: 0.003 s  <<< FAILURE!
 org.junit.ComparisonFailure: 
 expected:<[ _      
 | |     
@@ -27,12 +27,12 @@ expected:<[ _
 | |     
 | |____ 
 |______|]
-> but was:<[
-
-
-
-
-]
+> but was:<[__    __ __    __
+\ \  / / \ \  / /
+ \ \/ /   \ \/ / 
+  >  <     >  <  
+ / /\ \   / /\ \ 
+/_/  \_\ /_/  \_\]
 >
 	at it.mtss.unipd.RomanPrinterTest.testSingleCharacters(RomanPrinterTest.java:21)
 
