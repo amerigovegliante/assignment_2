@@ -26,10 +26,12 @@ public class IntegerToRoman {
             if(number==9){
                 roman="IX";
             }else{roman="X";}
-        }
-        else if(number <= 20)
-        {
-            roman = "X" + convert(roman - 10);
+        }else if(number <= 39){
+            roman = "X" + convert(number - 10);
+        }else if (number<50){
+            roman="XL"+convert(number-40);
+        }else if(number==50){
+            roman="L";
         }
         return roman;
     }
