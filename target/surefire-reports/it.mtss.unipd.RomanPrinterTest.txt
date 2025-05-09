@@ -1,0 +1,38 @@
+-------------------------------------------------------------------------------
+Test set: it.mtss.unipd.RomanPrinterTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.005 s <<< FAILURE! - in it.mtss.unipd.RomanPrinterTest
+testComplexCombinations(it.mtss.unipd.RomanPrinterTest)  Time elapsed: 0.001 s  <<< FAILURE!
+org.junit.ComparisonFailure: 
+expected:< _____  [__      __
+|_   _| \ \    / /
+  | |    \ \  / / 
+  | |     \ \/ /  
+ _| |_     \  /   
+|_____|     \/   ] 
+> but was:< _____  [
+|_   _| 
+  | |   
+  | |   
+ _| |_  
+|_____|] 
+>
+	at it.mtss.unipd.RomanPrinterTest.testComplexCombinations(RomanPrinterTest.java:39)
+
+testSingleCharacters(it.mtss.unipd.RomanPrinterTest)  Time elapsed: 0.004 s  <<< FAILURE!
+org.junit.ComparisonFailure: 
+expected:<[__      __
+\ \    / /
+ \ \  / / 
+  \ \/ /  
+   \  /   
+    \/    ]
+> but was:<[
+
+
+
+
+]
+>
+	at it.mtss.unipd.RomanPrinterTest.testSingleCharacters(RomanPrinterTest.java:15)
+
