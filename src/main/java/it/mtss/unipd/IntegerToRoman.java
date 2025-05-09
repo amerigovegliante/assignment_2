@@ -1,3 +1,7 @@
+////////////////////////////////////////////////////////////////////
+// [Amerigo] [Vegliante] [2111004]
+// [Giulia] [Romanato] [2104060]
+///////////////////////////////////////////////////////////////////
 package it.mtss.unipd;
 
 public class IntegerToRoman {
@@ -22,6 +26,10 @@ public class IntegerToRoman {
             if(number==9){
                 roman="IX";
             }else{roman="X";}
+        }
+        else if(number <= 20)
+        {
+            roman = "X" + convert(roman - 10);
         }
         return roman;
     }
