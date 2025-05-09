@@ -59,4 +59,10 @@ public class IntegerToRomanTest {
             assertEquals(numeriRomani[i], IntegerToRoman.convert(i+1));
         }
     }
+    @Test
+    public void testOutOfBounds()
+    {
+        assertEquals(null, IntegerToRoman.convert(0));
+        assertEquals(null, IntegerToRoman.convert(1001));
+    }
 }
