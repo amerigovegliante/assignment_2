@@ -7,6 +7,14 @@ public class IntegerToRoman {
             for (int i=0;i<number;i++){
                 roman=roman+"I";
             }
+        } else if(number <= 6)
+        {
+            if(number == 4)
+                roman = "IV";
+            else if(number == 5)
+                roman = "V";
+            else
+                roman = "VI";
         }
         return roman;
     }
