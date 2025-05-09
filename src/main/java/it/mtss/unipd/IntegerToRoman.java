@@ -32,6 +32,14 @@ public class IntegerToRoman {
             roman="XL"+convert(number-40);
         }else if(number==50){
             roman="L";
+        }else if(number <= 89)
+        {
+            roman = "L" + convert(number - 50);
+        }else if(number <= 99)
+        {
+            roman = "XC" + convert(number - 90);
+        }else if(number == 100){
+            roman = "C";
         }
         return roman;
     }
