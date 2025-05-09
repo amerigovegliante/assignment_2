@@ -8,11 +8,16 @@ public class RomanPrinter {
       String AsciiArt="";
       romanNumber=romanNumber.toUpperCase();
       char [] Roman= romanNumber.toCharArray();
-      String[] AsciiArt_I={" _____ ","|_   _|","  | |  ","  | |  "," _| |_ ","|_____|"};
+      String[] AsciiArt_I = {" _____ ","|_   _|","  | |  ","  | |  "," _| |_ ","|_____|"};
+      String[] AsciiArt_V = {"__      __", "\\ \\    / /", " \\ \\  / / ","  \\ \\/ /  ","   \\  /   ","    \\/    "};
       for (int j=0;j<6;j++){
           for (int i=0;i<Roman.length;i++){
               if(Roman[i]=='I'){
                   AsciiArt=AsciiArt+AsciiArt_I[j];
+              }
+              else if(Roman[i]=='V')
+              {
+                AsciiArt+=AsciiArt_V[j];
               }
               if(i!=Roman.length-1){
                   AsciiArt=AsciiArt+" ";
