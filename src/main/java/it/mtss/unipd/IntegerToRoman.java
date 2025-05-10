@@ -8,7 +8,7 @@ public class IntegerToRoman {
     public static String convert(int number){
         String roman=new String();
         if(number<0 || number>1000){
-            return null;
+            return "";
         }else if(number<=3){
             for (int i=0;i<number;i++){
                 roman=roman+"I";
@@ -44,6 +44,17 @@ public class IntegerToRoman {
             roman = "CD"+convert(number-400);
         }else if(number == 500){
             roman = "D";
+        }else if(number <= 899)
+        {
+            roman = "D" + convert(number - 500);
+        }
+        else if(number <= 999)
+        {
+            roman = "CM" + convert(number - 900);
+        }
+        else if(number == 1000)
+        {
+            roman = "M";
         }
         return roman;
     }
