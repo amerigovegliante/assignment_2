@@ -8,7 +8,7 @@ public class IntegerToRoman {
     public static String convert(int number){
         String roman=new String();
         if(number<0 || number>1000){
-            return null;
+            return "";
         }else if(number<=3){
             for (int i=0;i<number;i++){
                 roman=roman+"I";
