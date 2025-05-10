@@ -28,7 +28,7 @@ jobs:
       with:
           generate-branches-badge: true
           jacoco-csv-file: target/site/jacoco/jacoco.csv
-          badges-directory: .github/badges
+          badges-directory: .github/workflows
           
     - name: Add badges
       run: git add .github/badges
