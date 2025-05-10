@@ -66,7 +66,7 @@ public class IntegerToRomanTest {
     @Test
     public void testOutOfBounds()
     {
-        assertEquals(null, IntegerToRoman.convert(0));
-        assertEquals(null, IntegerToRoman.convert(1001));
+        assertEquals("", IntegerToRoman.convert(0));
+        assertEquals("", IntegerToRoman.convert(1001));
     }
 }
