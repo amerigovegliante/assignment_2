@@ -18,30 +18,9 @@ jobs:
         cache: 'maven'
     - name: Build and test with JaCoCo
       run: mvn -B clean package --file pom.xml
-
-    - name: Generate site
-      run: mvn jacoco:prepare-agent install jacoco:report
-      
-    - name: Generate JaCoCo Badge
-      id: jacoco
-      uses: cicirello/jacoco-badge-generator@v2
+    - name: Upload coverage reports to Codecov
+      uses: codecov/codecov-action@v5
       with:
-          generate-branches-badge: true
-          jacoco-csv-file: target/site/jacoco/jacoco.csv
-          badges-directory: .github/workflows
-          
-    - name: Add badges
-      run: git add .github/workflows
-
-    - name: Commit files
-      run: |
-          git config --global user.name 'github-actions'
-          git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git commit -m "Added coverage badges" -a || true
-          
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-            github_token: ${{ secrets.GITHUB_TOKEN }}
-            branch: ${{ github.head_ref }}
+        token: ${{ secrets.CODECOV_TOKEN }}
+        slug: amerigovegliante/assignment_2
 
