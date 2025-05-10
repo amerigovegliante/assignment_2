@@ -38,8 +38,12 @@ public class IntegerToRoman {
         }else if(number <= 99)
         {
             roman = "XC" + convert(number - 90);
-        }else if(number == 100){
-            roman = "C";
+        }else if(number < 400){
+            roman = "C"+convert(number-100);
+        }else if(number < 500){
+            roman = "CD"+convert(number-400);
+        }else if(number == 500){
+            roman = "D";
         }
         return roman;
     }
