@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="it.mtss.unipd.RomanPrinterTest" time="0.07" tests="2" errors="0" skipped="0" failures="2">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="it.mtss.unipd.RomanPrinterTest" time="0.073" tests="2" errors="0" skipped="0" failures="2">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/home/shinomi/Projects/roman-number/target/test-classes:/home/shinomi/Projects/roman-number/target/classes:/home/shinomi/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/shinomi/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
+    <property name="java.class.path" value="/home/shinomi/Projects/assignment_2/target/test-classes:/home/shinomi/Projects/assignment_2/target/classes:/home/shinomi/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/shinomi/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
     <property name="java.vm.vendor" value="Ubuntu"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.vendor.url" value="https://ubuntu.com/"/>
@@ -12,9 +12,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-21-openjdk-amd64/lib"/>
-    <property name="sun.java.command" value="/home/shinomi/Projects/roman-number/target/surefire/surefirebooter6405637750947175037.jar /home/shinomi/Projects/roman-number/target/surefire 2025-05-09T18-43-58_217-jvmRun1 surefire3086116059615568752tmp surefire_09709053765871141368tmp"/>
+    <property name="sun.java.command" value="/home/shinomi/Projects/assignment_2/target/surefire/surefirebooter3443425640881217967.jar /home/shinomi/Projects/assignment_2/target/surefire 2025-05-09T20-17-56_391-jvmRun1 surefire17705893689293672097tmp surefire_09074584289281325805tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="/home/shinomi/Projects/roman-number/target/test-classes:/home/shinomi/Projects/roman-number/target/classes:/home/shinomi/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/shinomi/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
+    <property name="surefire.test.class.path" value="/home/shinomi/Projects/assignment_2/target/test-classes:/home/shinomi/Projects/assignment_2/target/classes:/home/shinomi/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/shinomi/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/home/shinomi"/>
     <property name="user.language" value="en"/>
@@ -22,12 +22,12 @@
     <property name="java.version.date" value="2025-01-21"/>
     <property name="java.home" value="/usr/lib/jvm/java-21-openjdk-amd64"/>
     <property name="file.separator" value="/"/>
-    <property name="basedir" value="/home/shinomi/Projects/roman-number"/>
+    <property name="basedir" value="/home/shinomi/Projects/assignment_2"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/home/shinomi/Projects/roman-number/target/surefire/surefirebooter6405637750947175037.jar"/>
+    <property name="surefire.real.class.path" value="/home/shinomi/Projects/assignment_2/target/surefire/surefirebooter3443425640881217967.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.6+7-Ubuntu-124.10.1"/>
     <property name="user.name" value="shinomi"/>
@@ -41,7 +41,7 @@
     <property name="java.vendor.url.bug" value="https://bugs.launchpad.net/ubuntu/+source/openjdk-21"/>
     <property name="java.io.tmpdir" value="/tmp"/>
     <property name="java.version" value="21.0.6"/>
-    <property name="user.dir" value="/home/shinomi/Projects/roman-number"/>
+    <property name="user.dir" value="/home/shinomi/Projects/assignment_2"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="native.encoding" value="UTF-8"/>
@@ -54,13 +54,13 @@
     <property name="java.class.version" value="65.0"/>
   </properties>
   <testcase name="testComplexCombinations" classname="it.mtss.unipd.RomanPrinterTest" time="0.014">
-    <failure message="expected:&lt;__    __ [ _      &#10;\ \  / / | |     &#10; \ \/ /  | |     &#10;  &gt;  &lt;   | |     &#10; / /\ \  | |____ &#10;/_/  \_\ |______|]&#10;&gt; but was:&lt;__    __ [&#10;\ \  / / &#10; \ \/ /  &#10;  &gt;  &lt;   &#10; / /\ \  &#10;/_/  \_\ ]&#10;&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: 
-expected:<__    __ [ _      
-\ \  / / | |     
- \ \/ /  | |     
-  >  <   | |     
- / /\ \  | |____ 
-/_/  \_\ |______|]
+    <failure message="expected:&lt;__    __ [  ___ &#10;\ \  / /  / __|&#10; \ \/ /  | |   &#10;  &gt;  &lt;   | |   &#10; / /\ \  | |__ &#10;/_/  \_\  \___|]&#10;&gt; but was:&lt;__    __ [&#10;\ \  / / &#10; \ \/ /  &#10;  &gt;  &lt;   &#10; / /\ \  &#10;/_/  \_\ ]&#10;&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: 
+expected:<__    __ [  ___ 
+\ \  / /  / __|
+ \ \/ /  | |   
+  >  <   | |   
+ / /\ \  | |__ 
+/_/  \_\  \___|]
 > but was:<__    __ [
 \ \  / / 
  \ \/ /  
@@ -68,25 +68,25 @@ expected:<__    __ [ _
  / /\ \  
 /_/  \_\ ]
 >
-	at it.mtss.unipd.RomanPrinterTest.testComplexCombinations(RomanPrinterTest.java:57)
+	at it.mtss.unipd.RomanPrinterTest.testComplexCombinations(RomanPrinterTest.java:66)
 ]]></failure>
   </testcase>
-  <testcase name="testSingleCharacters" classname="it.mtss.unipd.RomanPrinterTest" time="0">
-    <failure message="expected:&lt;[ _      &#10;| |     &#10;| |     &#10;| |     &#10;| |____ &#10;|______|]&#10;&gt; but was:&lt;[__    __ __    __&#10;\ \  / / \ \  / /&#10; \ \/ /   \ \/ / &#10;  &gt;  &lt;     &gt;  &lt;  &#10; / /\ \   / /\ \ &#10;/_/  \_\ /_/  \_\]&#10;&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: 
-expected:<[ _      
-| |     
+  <testcase name="testSingleCharacters" classname="it.mtss.unipd.RomanPrinterTest" time="0.001">
+    <failure message="expected:&lt;[  _____ &#10; / ____|&#10;| |     &#10;| |     &#10;| |____ &#10; \_____|]&#10;&gt; but was:&lt;[&#10;&#10;&#10;&#10;&#10;]&#10;&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: 
+expected:<[  _____ 
+ / ____|
 | |     
 | |     
 | |____ 
-|______|]
-> but was:<[__    __ __    __
-\ \  / / \ \  / /
- \ \/ /   \ \/ / 
-  >  <     >  <  
- / /\ \   / /\ \ 
-/_/  \_\ /_/  \_\]
+ \_____|]
+> but was:<[
+
+
+
+
+]
 >
-	at it.mtss.unipd.RomanPrinterTest.testSingleCharacters(RomanPrinterTest.java:21)
+	at it.mtss.unipd.RomanPrinterTest.testSingleCharacters(RomanPrinterTest.java:24)
 ]]></failure>
   </testcase>
 </testsuite>
