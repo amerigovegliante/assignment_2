@@ -20,7 +20,7 @@ public class RomanPrinterTest
         String L = " _      \n" +"| |     \n" +"| |     \n" +"| |     \n" +"| |____ \n" +"|______|\n";
         assertEquals(L, RomanPrinter.print(50));
 
-        String C = "  _____ \n / ____|\n| |     \n| |     \n| |____ \n \\_____|\n";
+        String C = "  ___ \n / __|\n| |   \n| |   \n| |__ \n \\___|\n";
         assertEquals(C, RomanPrinter.print(100));
 
         String D = " _____  \n" +"|  __ \\ \n" +"| |  | |\n" +"| |  | |\n" +"| |__| |\n" +"|_____/ \n";
@@ -68,7 +68,13 @@ public class RomanPrinterTest
          +"/_/  \\_\\ |______| |_____| /_/  \\_\\\n";
         assertEquals(XLIX, RomanPrinter.print(49));
         
-        String XC = "__    __   ___ \n" +"\\ \\  / /  / __|\n" +" \\ \\/ /  | |   \n" +"  >  <   | |   \n" +" / /\\ \\  | |__ \n" +"/_/  \\_\\  \\___|\n";
+        String XC = 
+        "__    __   ___ \n" 
+        +"\\ \\  / /  / __|\n" 
+        +" \\ \\/ /  | |   \n" 
+        +"  >  <   | |   \n" 
+        +" / /\\ \\  | |__ \n" 
+        +"/_/  \\_\\  \\___|\n";
         assertEquals(XC, RomanPrinter.print(90));
 
         String XCIV = "__    __   ___   _____  __      __\n" +"\\ \\  / /  / __| |_   _| \\ \\    / /\n" +" \\ \\/ /  | |      | |    \\ \\  / / \n" +"  >  <   | |      | |     \\ \\/ /  \n" +" / /\\ \\  | |__   _| |_     \\  /   \n" +"/_/  \\_\\  \\___| |_____|     \\/    \n";
