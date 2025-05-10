@@ -1,3 +1,1 @@
-![coverage](.github/jacoco.svg)
-
-[![Java CI with Maven](https://github.com/amerigovegliante/assignment_2/actions/workflows/build.yml/badge.svg?branch=master)](https://github.com/amerigovegliante/assignment_2/actions/workflows/build.yml)
+[![codecov](https://codecov.io/gh/amerigovegliante/assignment_2/graph/badge.svg?token=85M3S3DH7Q)](https://codecov.io/gh/amerigovegliante/assignment_2)
