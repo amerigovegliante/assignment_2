@@ -30,6 +30,7 @@ public class RomanPrinter {
             else if(Roman[i]=='L')
             {
               AsciiArt+=AsciiArt_L[j];
+              
             }
 
             if(i!=Roman.length-1){
