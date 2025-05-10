@@ -11,7 +11,7 @@
     <property name="java.vm.specification.version" value="22"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/22.0.1-8/x64/lib"/>
-    <property name="sun.java.command" value="/home/runner/work/assignment_2/assignment_2/target/surefire/surefirebooter12255057386341902705.jar /home/runner/work/assignment_2/assignment_2/target/surefire 2025-05-10T17-57-17_108-jvmRun1 surefire9254177428747380956tmp surefire_01714532702712914068tmp"/>
+    <property name="sun.java.command" value="/home/runner/work/assignment_2/assignment_2/target/surefire/surefirebooter5936394984300198885.jar /home/runner/work/assignment_2/assignment_2/target/surefire 2025-05-10T17-58-45_131-jvmRun1 surefire8790791130546270761tmp surefire_08529797876132743681tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/runner/work/assignment_2/assignment_2/target/test-classes:/home/runner/work/assignment_2/assignment_2/target/classes:/home/runner/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/runner/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -26,7 +26,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/home/runner/work/assignment_2/assignment_2/target/surefire/surefirebooter12255057386341902705.jar"/>
+    <property name="surefire.real.class.path" value="/home/runner/work/assignment_2/assignment_2/target/surefire/surefirebooter5936394984300198885.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="22.0.1+8"/>
     <property name="user.name" value="runner"/>
