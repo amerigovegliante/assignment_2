@@ -44,6 +44,17 @@ public class IntegerToRoman {
             roman = "CD"+convert(number-400);
         }else if(number == 500){
             roman = "D";
+        }else if(number <= 899)
+        {
+            roman = "D" + convert(number - 500);
+        }
+        else if(number <= 999)
+        {
+            roman = "CM" + convert(number - 900);
+        }
+        else if(number == 1000)
+        {
+            roman = "M";
         }
         return roman;
     }

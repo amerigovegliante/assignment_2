@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-21-openjdk-amd64/lib"/>
-    <property name="sun.java.command" value="/home/shinomi/Projects/assignment_2/target/surefire/surefirebooter4766724346492589321.jar /home/shinomi/Projects/assignment_2/target/surefire 2025-05-10T11-40-56_618-jvmRun1 surefire14323652327992037891tmp surefire_04573160682676279626tmp"/>
+    <property name="sun.java.command" value="/home/shinomi/Projects/assignment_2/target/surefire/surefirebooter5697106658183787946.jar /home/shinomi/Projects/assignment_2/target/surefire 2025-05-10T11-47-04_641-jvmRun1 surefire6694800732963373296tmp surefire_03284198218224947067tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/shinomi/Projects/assignment_2/target/test-classes:/home/shinomi/Projects/assignment_2/target/classes:/home/shinomi/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/shinomi/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -27,7 +27,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/home/shinomi/Projects/assignment_2/target/surefire/surefirebooter4766724346492589321.jar"/>
+    <property name="surefire.real.class.path" value="/home/shinomi/Projects/assignment_2/target/surefire/surefirebooter5697106658183787946.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.6+7-Ubuntu-124.10.1"/>
     <property name="user.name" value="shinomi"/>
