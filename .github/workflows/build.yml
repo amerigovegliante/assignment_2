@@ -35,7 +35,7 @@ jobs:
       run:
         git config --global user.name 'github-actions'
         git config --global user.name '41898282+github-actions[bot]@users.noreply.github.com'
-        git commit -m "Added coverage badges" -a
+        git commit -a -m "Added coverage badges"
 
     - name: Push changes
       uses: ad-m/github-push-action@master
