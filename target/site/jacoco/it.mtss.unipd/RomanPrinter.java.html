@@ -4,52 +4,53 @@
 ///////////////////////////////////////////////////////////////////
 package it.mtss.unipd;
 
-<span class="nc" id="L7">public class RomanPrinter {</span>
-    public static String print(int num){
-<span class="fc" id="L9">    return printAsciiArt(IntegerToRoman.convert(num));</span>
+<span class="nc" id="L7">public class RomanPrinter </span>
+{
+    public static String print(int num)
+    {
+<span class="fc" id="L11">      return printAsciiArt(IntegerToRoman.convert(num));</span>
     }
-    private static String printAsciiArt(String romanNumber){
-<span class="fc" id="L12">      String AsciiArt=&quot;&quot;;</span>
-<span class="fc" id="L13">      romanNumber=romanNumber.toUpperCase();</span>
-<span class="fc" id="L14">      char [] Roman= romanNumber.toCharArray();</span>
-<span class="fc" id="L15">      String[] AsciiArt_I = {&quot; _____ &quot;,&quot;|_   _|&quot;,&quot;  | |  &quot;,&quot;  | |  &quot;,&quot; _| |_ &quot;,&quot;|_____|&quot;};</span>
-<span class="fc" id="L16">      String[] AsciiArt_V = {&quot;__      __&quot;, &quot;\\ \\    / /&quot;, &quot; \\ \\  / / &quot;,&quot;  \\ \\/ /  &quot;,&quot;   \\  /   &quot;,&quot;    \\/    &quot;};</span>
-<span class="fc" id="L17">      String[] AsciiArt_X={&quot;__    __&quot;,&quot;\\ \\  / /&quot;,&quot; \\ \\/ / &quot;,&quot;  &gt;  &lt;  &quot;,&quot; / /\\ \\ &quot;,&quot;/_/  \\_\\&quot;};</span>
-<span class="fc" id="L18">      String[] AsciiArt_L={&quot; _      &quot;,&quot;| |     &quot;,&quot;| |     &quot;,&quot;| |     &quot;,&quot;| |____ &quot;,&quot;|______|&quot;};</span>
-<span class="fc" id="L19">      String[] AsciiArt_C={&quot;  ___ &quot;,&quot; / __|&quot;,&quot;| |   &quot;,&quot;| |   &quot;,&quot;| |__ &quot;,&quot; \\___|&quot;};</span>
-<span class="fc" id="L20">      String[] AsciiArt_D={&quot; _____  &quot;,&quot;|  __ \\ &quot;,&quot;| |  | |&quot;,&quot;| |  | |&quot;,&quot;| |__| |&quot;,&quot;|_____/ &quot;};</span>
-<span class="fc" id="L21">      String[] AsciiArt_M={&quot; __  __ &quot;,&quot;|  \\/  |&quot;,&quot;| \\  / |&quot;,&quot;| |\\/| |&quot;,&quot;| |  | |&quot;,&quot;|_|  |_|&quot;};</span>
-<span class="fc bfc" id="L22" title="All 2 branches covered.">      for (int j=0;j&lt;6;j++){</span>
-<span class="fc bfc" id="L23" title="All 2 branches covered.">          for (int i=0;i&lt;Roman.length;i++){</span>
-<span class="fc bfc" id="L24" title="All 2 branches covered.">            if(Roman[i]=='I'){</span>
-<span class="fc" id="L25">                AsciiArt=AsciiArt+AsciiArt_I[j];</span>
-            }
-<span class="fc bfc" id="L27" title="All 2 branches covered.">            else if(Roman[i]=='V')</span>
-            {
-<span class="fc" id="L29">              AsciiArt+=AsciiArt_V[j];</span>
-<span class="fc bfc" id="L30" title="All 2 branches covered.">            }else if(Roman[i]=='X'){</span>
-<span class="fc" id="L31">              AsciiArt=AsciiArt+AsciiArt_X[j];</span>
-<span class="fc bfc" id="L32" title="All 2 branches covered.">            }else if(Roman[i]=='L')</span>
-            {
-<span class="fc" id="L34">              AsciiArt+=AsciiArt_L[j];</span>
-<span class="fc bfc" id="L35" title="All 2 branches covered.">            }else if(Roman[i]=='C')</span>
-            {
-<span class="fc" id="L37">              AsciiArt+=AsciiArt_C[j];</span>
-<span class="fc bfc" id="L38" title="All 2 branches covered.">            }else if (Roman[i]=='D') {</span>
-<span class="fc" id="L39">                AsciiArt+=AsciiArt_D[j];</span>
-<span class="pc bpc" id="L40" title="1 of 2 branches missed.">            }else if(Roman[i] == 'M')</span>
-            {
-<span class="fc" id="L42">              AsciiArt+=AsciiArt_M[j];</span>
-            }
 
+    private static String printAsciiArt(String romanNumber)
+    {
+<span class="fc" id="L16">      String AsciiArt=&quot;&quot;;</span>
+<span class="fc" id="L17">      romanNumber=romanNumber.toUpperCase();</span>
+<span class="fc" id="L18">      char [] Roman= romanNumber.toCharArray();</span>
 
-<span class="fc bfc" id="L46" title="All 2 branches covered.">            if(i!=Roman.length-1){</span>
-<span class="fc" id="L47">                AsciiArt=AsciiArt+&quot; &quot;;</span>
-            }
+<span class="fc" id="L20">      String[] AsciiArt_I = {&quot; _____ &quot;,&quot;|_   _|&quot;,&quot;  | |  &quot;,&quot;  | |  &quot;,&quot; _| |_ &quot;,&quot;|_____|&quot;};</span>
+<span class="fc" id="L21">      String[] AsciiArt_V = {&quot;__      __&quot;, &quot;\\ \\    / /&quot;, &quot; \\ \\  / / &quot;,&quot;  \\ \\/ /  &quot;,&quot;   \\  /   &quot;,&quot;    \\/    &quot;};</span>
+<span class="fc" id="L22">      String[] AsciiArt_X={&quot;__    __&quot;,&quot;\\ \\  / /&quot;,&quot; \\ \\/ / &quot;,&quot;  &gt;  &lt;  &quot;,&quot; / /\\ \\ &quot;,&quot;/_/  \\_\\&quot;};</span>
+<span class="fc" id="L23">      String[] AsciiArt_L={&quot; _      &quot;,&quot;| |     &quot;,&quot;| |     &quot;,&quot;| |     &quot;,&quot;| |____ &quot;,&quot;|______|&quot;};</span>
+<span class="fc" id="L24">      String[] AsciiArt_C={&quot;  ___ &quot;,&quot; / __|&quot;,&quot;| |   &quot;,&quot;| |   &quot;,&quot;| |__ &quot;,&quot; \\___|&quot;};</span>
+<span class="fc" id="L25">      String[] AsciiArt_D={&quot; _____  &quot;,&quot;|  __ \\ &quot;,&quot;| |  | |&quot;,&quot;| |  | |&quot;,&quot;| |__| |&quot;,&quot;|_____/ &quot;};</span>
+<span class="fc" id="L26">      String[] AsciiArt_M={&quot; __  __ &quot;,&quot;|  \\/  |&quot;,&quot;| \\  / |&quot;,&quot;| |\\/| |&quot;,&quot;| |  | |&quot;,&quot;|_|  |_|&quot;};</span>
+
+<span class="fc bfc" id="L28" title="All 2 branches covered.">      for (int j=0;j&lt;6;j++)</span>
+      {
+<span class="fc bfc" id="L30" title="All 2 branches covered.">          for (int i=0;i&lt;Roman.length;i++)</span>
+          {
+<span class="fc bfc" id="L32" title="All 2 branches covered.">            if(Roman[i]=='I')</span>
+            
+<span class="fc" id="L34">                {AsciiArt=AsciiArt+AsciiArt_I[j];}</span>
+<span class="fc bfc" id="L35" title="All 2 branches covered.">            else if(Roman[i]=='V')</span>
+<span class="fc" id="L36">              {AsciiArt+=AsciiArt_V[j];}</span>
+<span class="fc bfc" id="L37" title="All 2 branches covered.">            else if(Roman[i]=='X')</span>
+<span class="fc" id="L38">              {AsciiArt=AsciiArt+AsciiArt_X[j];}</span>
+<span class="fc bfc" id="L39" title="All 2 branches covered.">            else if(Roman[i]=='L')</span>
+<span class="fc" id="L40">              {AsciiArt+=AsciiArt_L[j];}</span>
+<span class="fc bfc" id="L41" title="All 2 branches covered.">            else if(Roman[i]=='C')</span>
+<span class="fc" id="L42">              {AsciiArt+=AsciiArt_C[j];}</span>
+<span class="fc bfc" id="L43" title="All 2 branches covered.">            else if (Roman[i]=='D')</span>
+<span class="fc" id="L44">                {AsciiArt+=AsciiArt_D[j];}</span>
+<span class="pc bpc" id="L45" title="1 of 2 branches missed.">            else if(Roman[i] == 'M')</span>
+<span class="fc" id="L46">              {AsciiArt+=AsciiArt_M[j];}</span>
+
+<span class="fc bfc" id="L48" title="All 2 branches covered.">            if(i!=Roman.length-1)</span>
+<span class="fc" id="L49">                {AsciiArt=AsciiArt+&quot; &quot;;}</span>
           }
-<span class="fc" id="L50">          AsciiArt=AsciiArt+&quot;\n&quot;;</span>
+<span class="fc" id="L51">          AsciiArt=AsciiArt+&quot;\n&quot;;</span>
       }
-<span class="fc" id="L52">      return AsciiArt;</span>
+<span class="fc" id="L53">      return AsciiArt;</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>
